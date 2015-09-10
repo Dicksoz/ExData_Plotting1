@@ -46,4 +46,4 @@ DownloadData <- function() {
       data
 }
 
-CreatePlot3(DownloadData)
+CreatePlot3(DownloadData())

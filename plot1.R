@@ -32,4 +32,4 @@ DownloadData <- function() {
       data
 }
 
-CreatePlot1(DownloadData)
+CreatePlot1(DownloadData())

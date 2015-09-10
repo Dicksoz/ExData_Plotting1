@@ -15,7 +15,7 @@ CreatePlot4 <- function(DAT,...) {
       labelbreaks = seq(from=0, by=MinutesPerDay, 
                         length.out=(nrow(DAT)+Extra)/MinutesPerDay)
       #Top Left Plot
-      plot.ts(DAT$Global_active_power,axes = FALSE,ylab = "Global Active Power (kilowatts)",xlab = NULL)
+      plot.ts(DAT$Global_active_power,axes = FALSE,ylab = "Global Active Power",xlab = NULL)
       axis(2)
       axis(1, labels = Weekdays, labelbreaks)
       box()
@@ -66,4 +66,4 @@ DownloadData <- function() {
       data
 }
 
-CreatePlot4(DownloadData)
+CreatePlot4(DownloadData())
